@@ -72,5 +72,12 @@ public class PurchaseController {
         stage.setScene(scene);
         stage.show();
     } //Switches straight to the pizza menu after you login
+    public void switchToReceipt(ActionEvent event) throws IOException {
+        fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Receipt.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
+    } //Switches to receipt
 
 }
