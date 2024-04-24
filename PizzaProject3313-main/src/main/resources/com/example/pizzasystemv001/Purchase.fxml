@@ -19,7 +19,7 @@
                </font>
             </Label>
             <TextArea fx:id="taPurchaseSummary" editable="false" layoutX="13.0" layoutY="48.0" prefHeight="237.0" prefWidth="343.0" />
-            <Button layoutX="381.0" layoutY="296.0" mnemonicParsing="false" text="Confirm Purchase">
+            <Button layoutX="381.0" layoutY="296.0" mnemonicParsing="false" onAction="#switchToReceipt" text="Confirm Purchase">
                <font>
                   <Font size="18.0" />
                </font>
