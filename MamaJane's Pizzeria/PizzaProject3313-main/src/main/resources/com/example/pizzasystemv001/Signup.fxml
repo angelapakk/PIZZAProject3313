@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="signupPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: &quot;4285f4&quot;;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizzasystemv001.SignupController">
+   <children>
+      <AnchorPane layoutX="300.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="285.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Sign Up" textFill="#4e4e4e">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="125.0" text="Last Name:" textFill="#4285f4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="62.0" text="First Name:" textFill="#4285f4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="185.0" text="Phone Number:" textFill="#4285f4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="247.0" text="Password:" textFill="#4285f4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userFirstName" layoutX="17.0" layoutY="89.0" prefHeight="25.0" prefWidth="250.0" />
+            <TextField fx:id="userLastName" layoutX="17.0" layoutY="152.0" prefHeight="25.0" prefWidth="250.0" />
+            <TextField fx:id="userPhoneNumber" layoutX="17.0" layoutY="212.0" prefHeight="25.0" prefWidth="250.0" />
+            <TextField fx:id="userPassword" layoutX="17.0" layoutY="274.0" prefHeight="25.0" prefWidth="250.0" />
+            <Button fx:id="registerUser" layoutX="156.0" layoutY="306.0" mnemonicParsing="false" onAction="#registerUser" style="-fx-background-color: &quot;4285f4&quot;;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="backToLogin" layoutX="37.0" layoutY="308.0" mnemonicParsing="false" onAction="#loadLogin" style="-fx-background-color: white;" text="Return to Login" textFill="#4285f4" />
+            <Line endX="276.4595947265625" endY="54.666664123535156" startX="7.33331298828125" startY="54.666664123535156" stroke="#4e4e4e" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="15.0" layoutY="14.0" prefHeight="48.0" prefWidth="570.0" style="-fx-background-color: white;">
+         <children>
+            <Button layoutY="2.0" mnemonicParsing="false" onAction="#loadPizzaIntro" prefHeight="48.0" prefWidth="138.0" style="-fx-background-color: white;" text="Home">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="432.0" layoutY="2.0" mnemonicParsing="false" onAction="#switchToPurchase" prefHeight="48.0" prefWidth="138.0" style="-fx-background-color: white;" text="My Cart">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="138.0" layoutY="1.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: white;" text="Menu">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="284.0" mnemonicParsing="false" onAction="#loadLogin" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: white;" text="Login" textFill="#4285f4">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Line endX="-42.66668701171875" endY="-37.0" layoutX="327.0" layoutY="87.0" startX="-42.66668701171875" startY="-87.66667175292969" />
+            <Line endX="42.33331298828125" endY="-74.66667175292969" layoutX="389.0" layoutY="126.0" startX="42.33331298828125" startY="-126.0" />
+            <Line endX="15.0" endY="36.0" layoutX="123.0" layoutY="14.0" startX="15.0" startY="-14.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
