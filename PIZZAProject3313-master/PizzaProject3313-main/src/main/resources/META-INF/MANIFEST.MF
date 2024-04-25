@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: com.example.pizzasystemv001.PizzaApplication
+Class-Path: com.example.pizzasystemv001
+
